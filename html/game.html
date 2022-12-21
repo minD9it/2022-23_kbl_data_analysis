@@ -1,0 +1,826 @@
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>KBL 공식 홈페이지</title>
+    <meta name="author" content="KBL">
+    <meta name="description" content="KBL 공식 홈페이지">
+    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <link rel="icon" href="/imgs/favicon/kbl/favicon.svg">
+    <link rel="apple-touch-icon" type="image/png" id="apple-icon-60x60" sizes="60x60"
+        href="/imgs/favicon/kbl/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" type="image/png" id="apple-icon-87x87" sizes="87x87"
+        href="/imgs/favicon/kbl/apple-icon-87x87.png">
+    <link rel="apple-touch-icon" type="image/png" id="apple-icon-120x120" sizes="120x120"
+        href="/imgs/favicon/kbl/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" type="image/png" id="apple-icon-180x180" sizes="180x180"
+        href="/imgs/favicon/kbl/apple-icon-180x180.png">
+    <link rel="apple-touch-icon" type="image/png" id="apple-icon-1024x1024" sizes="1024x1024"
+        href="/imgs/favicon/kbl/apple-icon-1024x1024.png">
+    <link rel="icon" type="image/png" id="android-icon-48x48" sizes="48x48"
+        href="/imgs/favicon/kbl/android-icon-48x48.png">
+    <link rel="icon" type="image/png" id="android-icon-192x192" sizes="192x192"
+        href="/imgs/favicon/kbl/android-icon-192x192.png">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+    <script type="text/javascript" src="/js/log/nlogger.js"></script>
+    <script
+        type="text/javascript">window.nLogger.configure({ nth_service_id: window.location.hostname, nth_logging_url_base_http: "https://log.kbl.or.kr/nlog", nth_logging_url_base_https: "https://log.kbl.or.kr/nlog" })</script>
+    <script type="text/javascript">window.nLogger.log()</script>
+    <script type="text/javascript">function logEvent(n, o) { window.nLogger && window.nLogger.event(n, o) }</script>
+    <script type="text/javascript">function logSetUserId(e) { window.nLogger && window.nLogger.setUserId(e) }</script>
+    <title></title>
+    <meta name="description" content="KBL 공식 홈페이지">
+    <meta name="author" content="KBL">
+    <link href="/static/css/2.cca08781.chunk.css" rel="stylesheet">
+    <link href="/static/css/main.603aae7b.chunk.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="root">
+        <header class="kbl ">
+            <div class="popup " style="display: none;">
+                <div class="pop-wrap">
+                    <div class="pop-con">오류가 발생했습니다.</div>
+                    <div class="pop-btn"><button class="pb">확인</button></div>
+                </div>
+            </div>
+            <div class="desktop-only">
+                <div class="user-wrap">
+                    <div class="user-con">
+                        <ul class="user">
+                            <li><a class="" href="#" data-target="/auth/login">로그인</a></li>
+                            <li><a class="" href="#" data-target="/member/signup">회원가입</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-wrap">
+                    <div class="header-con">
+                        <div class="logo"><a><i class="logo-kbl"></i></a></div>
+                        <ul class="emblem-wrap">
+                            <li data-team-code="kbl"><i class="emblem-kbl"></i></li>
+                            <li data-team-code="db"><i class="emblem-db"></i></li>
+                            <li data-team-code="ss"><i class="emblem-ss"></i></li>
+                            <li data-team-code="sk"><i class="emblem-sk"></i></li>
+                            <li data-team-code="lg"><i class="emblem-lg"></i></li>
+                            <li data-team-code="car"><i class="emblem-car"></i></li>
+                            <li data-team-code="kcc"><i class="emblem-kcc"></i></li>
+                            <li data-team-code="kgc"><i class="emblem-kgc"></i></li>
+                            <li data-team-code="kt"><i class="emblem-kt"></i></li>
+                            <li data-team-code="gas"><i class="emblem-gas"></i></li>
+                            <li data-team-code="hd"><i class="emblem-hd"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-wrap">
+                    <ul class="nav-con">
+                        <li class="active">
+                            <h6>LIVE∙기록</h6>
+                            <ul>
+                                <li class="" data-path="/game/schedule-list">일정 및 결과</li>
+                                <li class="" data-path="/game/team-rank">팀 순위</li>
+                                <li class="" data-path="/game/player-rank-top5">선수 순위</li>
+                                <li class="" data-path="/game/archive-team">팀 기록실</li>
+                                <li class="active" data-path="/game/archive-player">선수 기록실</li>
+                                <li class="" data-path="/game/compare-team">팀 기록 비교</li>
+                                <li class="" data-path="/game/compare-offence-defence">공수력 비교</li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <h6>선수∙스태프</h6>
+                            <ul>
+                                <li class="" data-path="/player-staff/player">선수</li>
+                                <li class="" data-path="/player-staff/coaching-staff">코칭 스태프</li>
+                                <li class="" data-path="/player-staff/support-staff">지원 스태프</li>
+                                <li class="" data-path="/player-staff/cheerleader">응원단</li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <h6>FAN∙소통</h6>
+                            <ul>
+                                <li class="" data-path="/fan/kblpoll">KBL Polls</li>
+                                <li class="" data-path="/fan/kblchallenge">KBL Challenge</li>
+                                <li class="" data-path="/fan/kbldraw">KBL Draw</li>
+                                <li class="" data-path="/fan/kblexperience">KBL Experience</li>
+                                <li class="" data-path="/fan/dleague">KBL D리그 직관신청</li>
+                                <li class="" data-path="/fan/faq">FAQ</li>
+                                <li class="" data-path="/fan/inquiry">문의∙제안</li>
+                                <li class="" data-path="/fan/sns">SNS채널</li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <h6>미디어∙뉴스</h6>
+                            <ul>
+                                <li class="" data-path="/media/highlight">하이라이트∙TV</li>
+                                <li class="" data-path="/media/notice">공지사항</li>
+                                <li class="" data-path="/media/live">LIVE·다시보기</li>
+                                <li class="" data-path="/media/gamenote">게임노트</li>
+                                <li class="" data-path="/media/photo">사진</li>
+                                <li class="" data-path="/media/understanding">농구 이해하기</li>
+                                <li class="" data-path="/media/video-rule-book">비디오 룰북</li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <h6>스토리</h6>
+                            <ul>
+                                <li class="" data-path="/story/history">히스토리</li>
+                                <li class="" data-path="/story/review-season">시즌리뷰</li>
+                                <li class="" data-path="/story/chronology">구단변천사</li>
+                                <li class="" data-path="/story/record">주요기록</li>
+                                <li class="" data-path="/story/draft">드래프트</li>
+                                <li class="" data-path="/story/rule">제도 및 규칙</li>
+                                <li class="" data-path="/story/ebook">E-Book</li>
+                                <li class="" data-path="/story/clean-basket">클린바스켓센터</li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <h6>KBL</h6>
+                            <ul>
+                                <li class="" data-path="/intro/greeting">소개∙인사말</li>
+                                <li class="" data-path="/intro/organization">프론트∙조직</li>
+                                <li class="" data-path="/intro/history">연혁</li>
+                                <li class="" data-path="/intro/emblem">엠블럼∙CI</li>
+                                <li class="" data-path="/intro/sponsor">스폰서</li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <h6>티켓</h6>
+                            <ul>
+                                <li class="" data-path="/ticket/reservation">예매하기</li>
+                                <li class="" data-path="/ticket/info">티켓가격</li>
+                                <li class="" data-path="/ticket/membership">멤버십</li>
+                                <li class="" data-path="/ticket/guidance">티켓 안내사항(공통)</li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <h6>KBL 스토어</h6>
+                            <ul></ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mobile-only">
+                <div class="header-wrap">
+                    <div class="mobile-menu "><i class="ic-menu-24"></i></div>
+                    <div class="logo "><i class="logo-kbl"></i><i class="ic-mobile-dropdown-12"></i></div>
+                    <ul class="icon">
+                        <li><i class="ic-shop-24"></i></li>
+                        <li data-path="/ticket/reservation"><i class="ic-ticket-24"></i></li>
+                    </ul>
+                </div>
+                <div class="mobile-menu-wrap ">
+                    <div class="user-wrap">
+                        <ul>
+                            <li data-path="/auth/login"><a href="#">로그인</a></li>
+                            <li data-path="/member/signup"><a href="#">회원가입</a></li>
+                        </ul>
+                    </div>
+                    <ul class="mobile-menu-con">
+                        <li class="active">
+                            <h6>LIVE∙기록</h6>
+                            <ul>
+                                <li class="" data-path="/game/schedule-list">일정 및 결과</li>
+                                <li class="" data-path="/game/team-rank">팀 순위</li>
+                                <li class="" data-path="/game/player-rank-top5">선수 순위</li>
+                                <li class="" data-path="/game/archive-team">팀 기록실</li>
+                                <li class="active" data-path="/game/archive-player">선수 기록실</li>
+                                <li class="" data-path="/game/compare-team">팀 기록 비교</li>
+                                <li class="" data-path="/game/compare-offence-defence">공수력 비교</li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <h6>선수∙스태프</h6>
+                            <ul>
+                                <li class="" data-path="/player-staff/player">선수</li>
+                                <li class="" data-path="/player-staff/coaching-staff">코칭 스태프</li>
+                                <li class="" data-path="/player-staff/support-staff">지원 스태프</li>
+                                <li class="" data-path="/player-staff/cheerleader">응원단</li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <h6>FAN∙소통</h6>
+                            <ul>
+                                <li class="" data-path="/fan/kblpoll">KBL Polls</li>
+                                <li class="" data-path="/fan/kblchallenge">KBL Challenge</li>
+                                <li class="" data-path="/fan/kbldraw">KBL Draw</li>
+                                <li class="" data-path="/fan/kblexperience">KBL Experience</li>
+                                <li class="" data-path="/fan/dleague">KBL D리그 직관신청</li>
+                                <li class="" data-path="/fan/faq">FAQ</li>
+                                <li class="" data-path="/fan/inquiry">문의∙제안</li>
+                                <li class="" data-path="/fan/sns">SNS채널</li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <h6>미디어∙뉴스</h6>
+                            <ul>
+                                <li class="" data-path="/media/highlight">하이라이트∙TV</li>
+                                <li class="" data-path="/media/notice">공지사항</li>
+                                <li class="" data-path="/media/live">LIVE·다시보기</li>
+                                <li class="" data-path="/media/gamenote">게임노트</li>
+                                <li class="" data-path="/media/photo">사진</li>
+                                <li class="" data-path="/media/understanding">농구 이해하기</li>
+                                <li class="" data-path="/media/video-rule-book">비디오 룰북</li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <h6>스토리</h6>
+                            <ul>
+                                <li class="" data-path="/story/history">히스토리</li>
+                                <li class="" data-path="/story/review-season">시즌리뷰</li>
+                                <li class="" data-path="/story/chronology">구단변천사</li>
+                                <li class="" data-path="/story/record">주요기록</li>
+                                <li class="" data-path="/story/draft">드래프트</li>
+                                <li class="" data-path="/story/rule">제도 및 규칙</li>
+                                <li class="" data-path="/story/ebook">E-Book</li>
+                                <li class="" data-path="/story/clean-basket">클린바스켓센터</li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <h6>KBL</h6>
+                            <ul>
+                                <li class="" data-path="/intro/greeting">소개∙인사말</li>
+                                <li class="" data-path="/intro/organization">프론트∙조직</li>
+                                <li class="" data-path="/intro/history">연혁</li>
+                                <li class="" data-path="/intro/emblem">엠블럼∙CI</li>
+                                <li class="" data-path="/intro/sponsor">스폰서</li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <h6>티켓</h6>
+                            <ul>
+                                <li class="" data-path="/ticket/reservation">예매하기</li>
+                                <li class="" data-path="/ticket/info">티켓가격</li>
+                                <li class="" data-path="/ticket/membership">멤버십</li>
+                                <li class="" data-path="/ticket/guidance">티켓 안내사항(공통)</li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <h6>KBL 스토어</h6>
+                            <ul></ul>
+                        </li>
+                        <li>
+                            <div>
+                                <ul class="mobile-menu-sns">
+                                    <li><a target="_blank" rel="noopener noreferrer"
+                                            href="https://www.facebook.com/kblsns"><i
+                                                class="ic-mobile-facebook"></i></a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer"
+                                            href="https://www.instagram.com/kbl_official/?hl=ko"><i
+                                                class="ic-mobile-instagram"></i></a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer"
+                                            href="https://www.youtube.com/user/onkbl"><i
+                                                class="ic-mobile-youtube"></i></a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer"
+                                            href="https://post.naver.com/my.nhn?memberNo=6064005"><i
+                                                class="ic-mobile-naver"></i></a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="https://tv.naver.com/kbl"><i
+                                                class="ic-mobile-navertv"></i></a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer"
+                                            href="https://bj.afreecatv.com/afbasket1"><i
+                                                class="ic-mobile-africa"></i></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="mobile-club-wrap ">
+                    <li data-team-code="kbl"><i class="emblem-kbl"></i>
+                        <p>KBL</p>
+                    </li>
+                    <li data-team-code="db"><i class="emblem-db"></i>
+                        <p>원주 DB 프로미</p>
+                    </li>
+                    <li data-team-code="ss"><i class="emblem-ss"></i>
+                        <p>서울 삼성 썬더스</p>
+                    </li>
+                    <li data-team-code="sk"><i class="emblem-sk"></i>
+                        <p>서울 SK 나이츠</p>
+                    </li>
+                    <li data-team-code="lg"><i class="emblem-lg"></i>
+                        <p>창원 LG 세이커스</p>
+                    </li>
+                    <li data-team-code="car"><i class="emblem-car"></i>
+                        <p>고양 캐롯 점퍼스</p>
+                    </li>
+                    <li data-team-code="kcc"><i class="emblem-kcc"></i>
+                        <p>전주 KCC 이지스</p>
+                    </li>
+                    <li data-team-code="kgc"><i class="emblem-kgc"></i>
+                        <p>안양 KGC 인삼공사</p>
+                    </li>
+                    <li data-team-code="kt"><i class="emblem-kt"></i>
+                        <p>수원 KT 소닉붐</p>
+                    </li>
+                    <li data-team-code="gas"><i class="emblem-gas"></i>
+                        <p>대구 한국가스공사</p>
+                    </li>
+                    <li data-team-code="hd"><i class="emblem-hd"></i>
+                        <p>울산 현대모비스 피버스</p>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div id="container" class="kbl ">
+            <div class="contents live-record">
+                <div class="con-header">
+                    <h2>팀 기록실</h2>
+                    <p>팀 기록을 확인할 수 있습니다.</p>
+                </div>
+                <ul class="filter-wrap">
+                    <li>
+                        <h6>경기</h6><select> <!--여기의 선택에 따라서 데이터가 달라지는데 이건.. 어떻게 코드로 선택할 수 있을까-->
+                            <option data-key="R" data-value="정규경기" value="정규경기">정규경기</option>
+                            <option data-key="PO" data-value="플레이오프" value="플레이오프">플레이오프</option>
+                            <option data-key="D1" data-value="D리그 1차" value="D리그 1차">D리그 1차</option>
+                            <option data-key="D2" data-value="D리그 2차" value="D리그 2차">D리그 2차</option>
+                            <option data-key="CU" data-value="KBL 컵대회" value="KBL 컵대회">KBL 컵대회</option>
+                        </select>
+                    </li>
+                    <li>
+                        <h6>년도</h6><select>
+                            <option data-key="S41G01" data-value="2022-2023" value="2022-2023">2022-2023</option>
+                            <option data-key="S39G01" data-value="2021-2022" value="2021-2022">2021-2022</option>
+                            <option data-key="S37G01" data-value="2020-2021" value="2020-2021">2020-2021</option>
+                            <option data-key="S35G01" data-value="2019-2020" value="2019-2020">2019-2020</option>
+                            <option data-key="S33G01" data-value="2018-2019" value="2018-2019">2018-2019</option>
+                            <option data-key="S31G01" data-value="2017-2018" value="2017-2018">2017-2018</option>
+                            <option data-key="S29G01" data-value="2016-2017" value="2016-2017">2016-2017</option>
+                            <option data-key="S27G01" data-value="2015-2016" value="2015-2016">2015-2016</option>
+                            <option data-key="S25G01" data-value="2014-2015" value="2014-2015">2014-2015</option>
+                            <option data-key="S23G01" data-value="2013-2014" value="2013-2014">2013-2014</option>
+                            <option data-key="S21G01" data-value="2012-2013" value="2012-2013">2012-2013</option>
+                            <option data-key="S19G01" data-value="2011-2012" value="2011-2012">2011-2012</option>
+                            <option data-key="S17G01" data-value="2010-2011" value="2010-2011">2010-2011</option>
+                            <option data-key="S15G01" data-value="2009-2010" value="2009-2010">2009-2010</option>
+                            <option data-key="S13G01" data-value="2008-2009" value="2008-2009">2008-2009</option>
+                            <option data-key="S12G01" data-value="2007-2008" value="2007-2008">2007-2008</option>
+                            <option data-key="S11G01" data-value="2006-2007" value="2006-2007">2006-2007</option>
+                            <option data-key="S10G01" data-value="2005-2006" value="2005-2006">2005-2006</option>
+                            <option data-key="S9G01" data-value="2004-2005" value="2004-2005">2004-2005</option>
+                            <option data-key="S8G01" data-value="2003-2004" value="2003-2004">2003-2004</option>
+                            <option data-key="S7G01" data-value="2002-2003" value="2002-2003">2002-2003</option>
+                            <option data-key="S6G01" data-value="2001-2002" value="2001-2002">2001-2002</option>
+                            <option data-key="S5G01" data-value="2000-2001" value="2000-2001">2000-2001</option>
+                            <option data-key="S4G01" data-value="1999-2000" value="1999-2000">1999-2000</option>
+                            <option data-key="S3G01" data-value="1998-1999" value="1998-1999">1998-1999</option>
+                            <option data-key="S2G01" data-value="1997-1998" value="1997-1998">1997-1998</option>
+                            <option data-key="S1G01" data-value="1997" value="1997">1997</option>
+                        </select>
+                    </li>
+                    <li>
+                        <h6>구분</h6><select>
+                            <option data-key="avg" data-value="평균" value="avg">평균</option>
+                            <option data-key="accum" data-value="누적" value="accum">누적</option>
+                        </select>
+                    </li>
+                </ul>
+                <div class="con-box">
+                    <div class="con-tit">
+                        <h4>팀 평균 기록</h4>
+                    </div>
+                    <div class="archive-team-table01-wrap">
+                        <div class="archive-team-table01" style="margin-top: auto;">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2">순위</th>
+                                        <th rowspan="2">팀</th>
+                                        <th rowspan="2" class="bd-gray" style="height: 8rem;">G</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="">
+                                        <td class="no">1</td>
+                                        <td class="name" style="text-align: left;">서울 SK</td> 
+                                        <td class="bd-gray">23</td> <!--지금 몇 경기했는지-->
+                                    </tr>
+                                    <tr class="">
+                                        <td class="no">2</td>
+                                        <td class="name" style="text-align: left;">안양 KGC</td>
+                                        <td class="bd-gray">23</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="no">3</td>
+                                        <td class="name" style="text-align: left;">울산 현대모비스</td>
+                                        <td class="bd-gray">22</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="no">4</td>
+                                        <td class="name" style="text-align: left;">고양 캐롯</td>
+                                        <td class="bd-gray">22</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="no">5</td>
+                                        <td class="name" style="text-align: left;">원주 DB</td>
+                                        <td class="bd-gray">22</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="no">6</td>
+                                        <td class="name" style="text-align: left;">전주 KCC</td>
+                                        <td class="bd-gray">23</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="no">7</td>
+                                        <td class="name" style="text-align: left;">대구 한국가스공사</td>
+                                        <td class="bd-gray">22</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="no">8</td>
+                                        <td class="name" style="text-align: left;">창원 LG</td>
+                                        <td class="bd-gray">22</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="no">9</td>
+                                        <td class="name" style="text-align: left;">수원 KT</td>
+                                        <td class="bd-gray">22</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="no">10</td>
+                                        <td class="name" style="text-align: left;">서울 삼성</td>
+                                        <td class="bd-gray">23</td>
+                                    </tr>
+                                    <tr class="font-red">
+                                        <td colspan="2">합계</td>
+                                        <td class="bd-gray">224</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="top-scroll-table archive-team-table01">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2" class="on" data-key="score">PTS<i class="ic-align"></i></th>
+                                        <th rowspan="2" class="" data-key="two">2P<i class="ic-align"></i></th>
+                                        <th rowspan="2" class="" data-key="twoA">2PA<i class="ic-align"></i></th>
+                                        <th rowspan="2" class="" data-key="twoR">2P%<i class="ic-align"></i></th>
+                                        <th rowspan="2" class="" data-key="three">3P<i class="ic-align"></i></th>
+                                        <th rowspan="2" class="" data-key="threeA">3PA<i class="ic-align"></i></th>
+                                        <th rowspan="2" class="" data-key="threeR">3P%<i class="ic-align"></i></th>
+                                        <th rowspan="2" class="" data-key="fg">FG<i class="ic-align"></i></th>
+                                        <th rowspan="2" class="" data-key="fgA">FGA<i class="ic-align"></i></th>
+                                        <th rowspan="2" class="" data-key="fgR">FG%<i class="ic-align"></i></th>
+                                        <th rowspan="2" class="" data-key="ft">FT<i class="ic-align"></i></th>
+                                        <th rowspan="2" class="" data-key="ftA">FTA<i class="ic-align"></i></th>
+                                        <th rowspan="2" class="" data-key="ftR">FT%<i class="ic-align"></i></th>
+                                        <th rowspan="2" class="" data-key="pp">PP<i class="ic-align"></i></th>
+                                        <th rowspan="2" class="" data-key="ppA">PPA<i class="ic-align"></i></th>
+                                        <th rowspan="2" class="" data-key="ppR">PP%<i class="ic-align"></i></th>
+                                        <th colspan="3">REBOUND</th>
+                                        <th rowspan="2" class="" data-key="ast">AST<i class="ic-align"></i></th>
+                                        <th rowspan="2" class="" data-key="to">TO<i class="ic-align"></i></th>
+                                        <th rowspan="2" class="" data-key="stl">STL<i class="ic-align"></i></th>
+                                        <th rowspan="2" class="" data-key="bs">BS<i class="ic-align"></i></th>
+                                        <th rowspan="2" class="" data-key="foul">PF<i class="ic-align"></i></th>
+                                    </tr>
+                                    <tr>
+                                        <th>OFF</th>
+                                        <th>DEF</th>
+                                        <th>TOT</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="">
+                                        <td class="on">84.7</td>
+                                        <td class="">25.6</td>
+                                        <td class="">48.7</td>
+                                        <td class="">52.6</td>
+                                        <td class="">6.8</td>
+                                        <td class="">19.9</td>
+                                        <td class="">34.1</td>
+                                        <td class="">32.4</td>
+                                        <td class="">68.5</td>
+                                        <td class="">47.3</td>
+                                        <td class="">13.2</td>
+                                        <td class="">18.4</td>
+                                        <td class="">71.5</td>
+                                        <td class="">21.1</td>
+                                        <td class="">36.9</td>
+                                        <td class="">57.2</td>
+                                        <td class="">10.3</td>
+                                        <td class="">23.9</td>
+                                        <td class="">34.2</td>
+                                        <td class="">18.3</td>
+                                        <td class="">9.0</td>
+                                        <td class="">7.5</td>
+                                        <td class="">2.7</td>
+                                        <td class="">18.9</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="on">83.3</td>
+                                        <td class="">21.0</td>
+                                        <td class="">39.8</td>
+                                        <td class="">52.8</td>
+                                        <td class="">9.9</td>
+                                        <td class="">28.4</td>
+                                        <td class="">34.9</td>
+                                        <td class="">31.0</td>
+                                        <td class="">68.3</td>
+                                        <td class="">45.4</td>
+                                        <td class="">11.4</td>
+                                        <td class="">15.7</td>
+                                        <td class="">73.1</td>
+                                        <td class="">16.8</td>
+                                        <td class="">28.9</td>
+                                        <td class="">58.2</td>
+                                        <td class="">10.4</td>
+                                        <td class="">26.3</td>
+                                        <td class="">36.8</td>
+                                        <td class="">18.3</td>
+                                        <td class="">10.1</td>
+                                        <td class="">5.8</td>
+                                        <td class="">3.0</td>
+                                        <td class="">18.5</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="on">83.1</td>
+                                        <td class="">25.2</td>
+                                        <td class="">47.5</td>
+                                        <td class="">53.0</td>
+                                        <td class="">7.0</td>
+                                        <td class="">20.9</td>
+                                        <td class="">33.3</td>
+                                        <td class="">32.1</td>
+                                        <td class="">68.4</td>
+                                        <td class="">47.0</td>
+                                        <td class="">11.9</td>
+                                        <td class="">17.6</td>
+                                        <td class="">67.7</td>
+                                        <td class="">20.1</td>
+                                        <td class="">34.6</td>
+                                        <td class="">58.1</td>
+                                        <td class="">11.5</td>
+                                        <td class="">25.6</td>
+                                        <td class="">37.1</td>
+                                        <td class="">20.3</td>
+                                        <td class="">10.6</td>
+                                        <td class="">6.9</td>
+                                        <td class="">2.0</td>
+                                        <td class="">20.0</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="on">82.8</td>
+                                        <td class="">18.0</td>
+                                        <td class="">34.5</td>
+                                        <td class="">52.2</td>
+                                        <td class="">12.0</td>
+                                        <td class="">32.8</td>
+                                        <td class="">36.5</td>
+                                        <td class="">30.0</td>
+                                        <td class="">67.3</td>
+                                        <td class="">44.6</td>
+                                        <td class="">10.8</td>
+                                        <td class="">14.3</td>
+                                        <td class="">75.6</td>
+                                        <td class="">13.5</td>
+                                        <td class="">23.1</td>
+                                        <td class="">58.7</td>
+                                        <td class="">8.6</td>
+                                        <td class="">22.9</td>
+                                        <td class="">31.5</td>
+                                        <td class="">16.5</td>
+                                        <td class="">9.3</td>
+                                        <td class="">7.5</td>
+                                        <td class="">2.5</td>
+                                        <td class="">17.5</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="on">81.8</td>
+                                        <td class="">25.5</td>
+                                        <td class="">49.1</td>
+                                        <td class="">51.9</td>
+                                        <td class="">6.9</td>
+                                        <td class="">20.3</td>
+                                        <td class="">34.1</td>
+                                        <td class="">32.4</td>
+                                        <td class="">69.4</td>
+                                        <td class="">46.7</td>
+                                        <td class="">10.2</td>
+                                        <td class="">13.7</td>
+                                        <td class="">74.2</td>
+                                        <td class="">19.4</td>
+                                        <td class="">33.8</td>
+                                        <td class="">57.5</td>
+                                        <td class="">11.0</td>
+                                        <td class="">24.4</td>
+                                        <td class="">35.4</td>
+                                        <td class="">16.9</td>
+                                        <td class="">11.5</td>
+                                        <td class="">6.5</td>
+                                        <td class="">2.2</td>
+                                        <td class="">19.8</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="on">80.8</td>
+                                        <td class="">22.5</td>
+                                        <td class="">45.0</td>
+                                        <td class="">50.0</td>
+                                        <td class="">7.6</td>
+                                        <td class="">21.0</td>
+                                        <td class="">36.1</td>
+                                        <td class="">30.0</td>
+                                        <td class="">65.9</td>
+                                        <td class="">45.6</td>
+                                        <td class="">13.2</td>
+                                        <td class="">16.7</td>
+                                        <td class="">79.1</td>
+                                        <td class="">17.5</td>
+                                        <td class="">31.0</td>
+                                        <td class="">56.5</td>
+                                        <td class="">10.6</td>
+                                        <td class="">24.3</td>
+                                        <td class="">34.9</td>
+                                        <td class="">18.1</td>
+                                        <td class="">9.7</td>
+                                        <td class="">5.6</td>
+                                        <td class="">1.7</td>
+                                        <td class="">17.3</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="on">80.5</td>
+                                        <td class="">23.8</td>
+                                        <td class="">43.1</td>
+                                        <td class="">55.1</td>
+                                        <td class="">6.8</td>
+                                        <td class="">21.0</td>
+                                        <td class="">32.4</td>
+                                        <td class="">30.6</td>
+                                        <td class="">64.2</td>
+                                        <td class="">47.7</td>
+                                        <td class="">12.5</td>
+                                        <td class="">16.8</td>
+                                        <td class="">74.1</td>
+                                        <td class="">17.8</td>
+                                        <td class="">30.1</td>
+                                        <td class="">59.1</td>
+                                        <td class="">9.2</td>
+                                        <td class="">23.3</td>
+                                        <td class="">32.5</td>
+                                        <td class="">17.1</td>
+                                        <td class="">10.9</td>
+                                        <td class="">6.8</td>
+                                        <td class="">2.5</td>
+                                        <td class="">19.5</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="on">78.8</td>
+                                        <td class="">23.6</td>
+                                        <td class="">46.2</td>
+                                        <td class="">51.1</td>
+                                        <td class="">6.7</td>
+                                        <td class="">20.5</td>
+                                        <td class="">32.7</td>
+                                        <td class="">30.3</td>
+                                        <td class="">66.7</td>
+                                        <td class="">45.4</td>
+                                        <td class="">11.4</td>
+                                        <td class="">16.9</td>
+                                        <td class="">67.5</td>
+                                        <td class="">18.6</td>
+                                        <td class="">33.5</td>
+                                        <td class="">55.4</td>
+                                        <td class="">11.6</td>
+                                        <td class="">26.0</td>
+                                        <td class="">37.6</td>
+                                        <td class="">16.7</td>
+                                        <td class="">11.2</td>
+                                        <td class="">7.5</td>
+                                        <td class="">2.9</td>
+                                        <td class="">20.3</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="on">76.2</td>
+                                        <td class="">18.9</td>
+                                        <td class="">40.1</td>
+                                        <td class="">47.1</td>
+                                        <td class="">8.7</td>
+                                        <td class="">26.7</td>
+                                        <td class="">32.5</td>
+                                        <td class="">27.5</td>
+                                        <td class="">66.8</td>
+                                        <td class="">41.2</td>
+                                        <td class="">12.4</td>
+                                        <td class="">16.9</td>
+                                        <td class="">73.4</td>
+                                        <td class="">14.9</td>
+                                        <td class="">29.9</td>
+                                        <td class="">49.8</td>
+                                        <td class="">11.8</td>
+                                        <td class="">22.7</td>
+                                        <td class="">34.5</td>
+                                        <td class="">15.5</td>
+                                        <td class="">10.0</td>
+                                        <td class="">5.8</td>
+                                        <td class="">2.1</td>
+                                        <td class="">18.5</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="on">74.4</td>
+                                        <td class="">21.1</td>
+                                        <td class="">42.7</td>
+                                        <td class="">49.5</td>
+                                        <td class="">6.6</td>
+                                        <td class="">20.5</td>
+                                        <td class="">32.2</td>
+                                        <td class="">27.7</td>
+                                        <td class="">63.2</td>
+                                        <td class="">43.9</td>
+                                        <td class="">12.3</td>
+                                        <td class="">17.0</td>
+                                        <td class="">72.4</td>
+                                        <td class="">16.4</td>
+                                        <td class="">30.2</td>
+                                        <td class="">54.5</td>
+                                        <td class="">9.8</td>
+                                        <td class="">23.7</td>
+                                        <td class="">33.5</td>
+                                        <td class="">15.2</td>
+                                        <td class="">11.1</td>
+                                        <td class="">5.7</td>
+                                        <td class="">2.4</td>
+                                        <td class="">21.3</td>
+                                    </tr>
+                                    <tr class="font-red">
+                                        <td>80.6</td>
+                                        <td>22.5</td>
+                                        <td>43.7</td>
+                                        <td>51.6</td>
+                                        <td>7.9</td>
+                                        <td>23.2</td>
+                                        <td>34.0</td>
+                                        <td>30.4</td>
+                                        <td>66.9</td>
+                                        <td>45.5</td>
+                                        <td>11.9</td>
+                                        <td>16.4</td>
+                                        <td>72.7</td>
+                                        <td>17.6</td>
+                                        <td>31.2</td>
+                                        <td>56.5</td>
+                                        <td>10.5</td>
+                                        <td>24.3</td>
+                                        <td>34.8</td>
+                                        <td>17.3</td>
+                                        <td>10.3</td>
+                                        <td>6.5</td>
+                                        <td>2.4</td>
+                                        <td>19.1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <footer>
+                <div class="footer-wrap">
+                    <div class="logo"><i class="logo-kbl-gray"></i></div>
+                    <div class="info-wrap">
+                        <ul class="page-link">
+                            <li style="font-weight: bold;"><a href="/terms/privacy">개인정보처리방침</a></li>
+                            <li><a href="/terms/usage">이용약관</a></li>
+                            <li><a href="https://kbl.or.kr/story/rule">운영제도</a></li>
+                            <li><a href="https://kbl.or.kr/intro/greeting#map-info">찾아오시는 길</a></li>
+                        </ul>
+                        <p>KBL 및 KBL 소속 10개 구단의 팀 로고, 엠블렘과 <br class="mobile-only">KBL 소속 선수의 사진, 초상, 영상, 캐릭터, 시안(KBL
+                            지적재산권)등을<br>무단으로 사용하는 것은 상표법 및 저작권법에 의거하여 금지됩니다.</p>
+                        <ul class="info">
+                            <li>T 02 - 2106 - 3000</li>
+                            <li>F 02 - 2106 - 3091</li>
+                            <li>A 서울특별시 강남구 도산대로 110 케이비엘 센터 (5, 6층)</li>
+                        </ul><span>Copyright ⓒ Korean Basketball League. All rights reserved.</span>
+                    </div>
+                    <ul class="sns-wrap">
+                        <li><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/kblsns"><i
+                                    class="ic-footer-facebook"></i></a></li>
+                        <li><a target="_blank" rel="noopener noreferrer"
+                                href="https://www.instagram.com/kbl_official/?hl=ko"><i
+                                    class="ic-footer-instagram"></i></a></li>
+                        <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/user/onkbl"><i
+                                    class="ic-footer-youtube"></i></a></li>
+                        <li><a target="_blank" rel="noopener noreferrer"
+                                href="https://post.naver.com/my.nhn?memberNo=6064005"><i
+                                    class="ic-footer-naver"></i></a></li>
+                        <li><a target="_blank" rel="noopener noreferrer" href="https://tv.naver.com/kbl"><i
+                                    class="ic-footer-navertv"></i></a></li>
+                        <li><a target="_blank" rel="noopener noreferrer" href="https://bj.afreecatv.com/afbasket1"><i
+                                    class="ic-footer-africa"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script>!function (e) { function r(r) { for (var n, l, f = r[0], i = r[1], a = r[2], c = 0, s = []; c < f.length; c++)l = f[c], Object.prototype.hasOwnProperty.call(o, l) && o[l] && s.push(o[l][0]), o[l] = 0; for (n in i) Object.prototype.hasOwnProperty.call(i, n) && (e[n] = i[n]); for (p && p(r); s.length;)s.shift()(); return u.push.apply(u, a || []), t() } function t() { for (var e, r = 0; r < u.length; r++) { for (var t = u[r], n = !0, f = 1; f < t.length; f++) { var i = t[f]; 0 !== o[i] && (n = !1) } n && (u.splice(r--, 1), e = l(l.s = t[0])) } return e } var n = {}, o = { 1: 0 }, u = []; function l(r) { if (n[r]) return n[r].exports; var t = n[r] = { i: r, l: !1, exports: {} }; return e[r].call(t.exports, t, t.exports, l), t.l = !0, t.exports } l.m = e, l.c = n, l.d = function (e, r, t) { l.o(e, r) || Object.defineProperty(e, r, { enumerable: !0, get: t }) }, l.r = function (e) { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 }) }, l.t = function (e, r) { if (1 & r && (e = l(e)), 8 & r) return e; if (4 & r && "object" == typeof e && e && e.__esModule) return e; var t = Object.create(null); if (l.r(t), Object.defineProperty(t, "default", { enumerable: !0, value: e }), 2 & r && "string" != typeof e) for (var n in e) l.d(t, n, function (r) { return e[r] }.bind(null, n)); return t }, l.n = function (e) { var r = e && e.__esModule ? function () { return e.default } : function () { return e }; return l.d(r, "a", r), r }, l.o = function (e, r) { return Object.prototype.hasOwnProperty.call(e, r) }, l.p = "/"; var f = this["webpackJsonpkbl-front"] = this["webpackJsonpkbl-front"] || [], i = f.push.bind(f); f.push = r, f = f.slice(); for (var a = 0; a < f.length; a++)r(f[a]); var p = i; t() }([])</script>
+    <script src="/static/js/2.07f95e68.chunk.js"></script>
+    <script src="/static/js/main.225f22aa.chunk.js"></script>
+</body>
+
+</html>
